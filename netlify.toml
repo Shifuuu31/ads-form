@@ -1,0 +1,24 @@
+[build]
+  command = "npm run build && mkdir -p dist/src/data && cp src/formulaire-campagne-meta-ads.html dist/index.html && cp src/formulaire-campagne-meta-ads.html dist/src/formulaire-campagne-meta-ads.html && cp src/app.js dist/src/app.js && cp src/data/form-data.json dist/src/data/form-data.json"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NPM_FLAGS = "--omit=dev"
+  SECRETS_SCAN_OMIT_KEYS = "PORT,MONGODB_DB,MONGODB_COLLECTION"
+
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["src/controllers/**", "src/routes/**", "src/config/**"]
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/src/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300"

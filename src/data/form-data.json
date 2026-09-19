@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "source": "formulaire-campagne-meta-ads.html",
+  "description": "Canonical migration payload for the association campaign form.",
+  "form": {
+    "v": {
+      "assoc_name": "Association Clé du Bien et d’Espoir — جمعية مفتاح الخير والأمل",
+      "assoc_description": "",
+      "city": "Marrakech",
+      "address": "quartier daoudiate, Marrakesh, Morocco, 40000",
+      "facebook": "facebook.com/profile.php?id=100082365777043",
+      "phone": "0626739660",
+      "contact_person": "Mr. Badr",
+      "platform": []
+    },
+    "auto": {},
+    "lang": "fr",
+    "savedAt": null
+  },
+  "formFieldIds": [
+    "assoc_name", "city", "address", "facebook", "fb_admin", "has_instagram", "instagram", "phone", "phone_whatsapp", "whatsapp_number", "contact_person",
+    "trainings", "priority", "details_scope", "details_other", "start_mode", "start_date", "reg_deadline", "duration", "price_type", "price", "price_period", "installments",
+    "audience", "gender", "age", "zone", "radius", "zone_other", "accept_outside", "outside_notes", "exclusions", "interests",
+    "benefits", "certificate", "differentiators", "special_offer", "discount_text", "seats", "offer_date", "message",
+    "goal", "success", "target_number", "cta", "channel", "visit_hours", "handler_same", "handler", "response_time", "availability", "next_steps", "reg_info",
+    "budget_type", "budget", "camp_start", "camp_end", "past_ads", "past_results", "assets", "drive_link", "photo_permission", "partners", "legal_checks", "avoid", "notes"
+  ]
+}
