@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build && mkdir -p dist/src/data && cp src/formulaire-campagne-meta-ads.html dist/index.html && cp src/formulaire-campagne-meta-ads.html dist/src/formulaire-campagne-meta-ads.html && cp src/app.js dist/src/app.js && cp src/data/form-data.json dist/src/data/form-data.json"
+  command = "npm run build && mkdir -p dist/src/data dist/src/assets && cp src/formulaire-campagne-meta-ads.html dist/index.html && cp src/formulaire-campagne-meta-ads.html dist/src/formulaire-campagne-meta-ads.html && cp src/app.js dist/src/app.js && cp src/data/form-data.json dist/src/data/form-data.json && cp -R src/assets/. dist/src/assets/"
   publish = "dist"
   functions = "netlify/functions"
 
